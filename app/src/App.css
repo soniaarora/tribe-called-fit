@@ -1,7 +1,9 @@
-
+a {
+  color: #E37245;
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #E37245;
   height: 10vh;
   display: flex;
   flex-direction: row;
