@@ -29,14 +29,14 @@ const opportunities = [
   {
     distance: 26.2,
     intensity: 1/(9 * 60 + 14),
-    startTime: 24 * 6 + 6,
+    startTime: 24 * 7 + 6,
     nRegulars: 2,
     nMaybes: 9
   },
   {
     distance: 3.1,
     intensity: 1/(5 * 60 + 50),
-    startTime: 24 * 5 + 8,
+    startTime: 24 * 6 + 8,
     nRegulars: 15,
     nMaybes: 28
   }
@@ -98,9 +98,8 @@ const App: React.FC<any> = () => {
           <p>{nRegulars} regulars</p>
           <p>{nMaybes} maybes</p>
           <a
-            href={`data:text/plain;charset=utf-8,${encodeURIComponent(calendar.toString())}`}
+            href={`data:text/calendar;charset=utf-8,${encodeURIComponent(calendar.toString())}`}
             download={`training-${startTime}.ics`}
-            type="text/calendar"
           >Add to calendar</a>
         </div>
       </div>
