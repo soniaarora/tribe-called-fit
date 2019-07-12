@@ -1,0 +1,40 @@
+
+
+.App-header {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  margin-left: 2vh;
+}
+
+.Opportunity {
+  height: 12vh;
+  padding: 2vh;
+  margin: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+}
+.Opportunity img {
+  height: 9vh;
+}
+.Opportunity_summary {
+  display: flex;
+  flex-direction: column;
+  line-height: 3vh;
+  margin-left: 2vh;
+}
+.Opportunity_summary p {
+  margin: 0;
+}
+
