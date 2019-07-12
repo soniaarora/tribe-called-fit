@@ -2,6 +2,10 @@ a {
   color: #E37245;
 }
 
+body {
+  overflow: hidden;
+}
+
 .App-header {
   background-color: #E37245;
   height: 10vh;
@@ -13,8 +17,12 @@ a {
   color: white;
 }
 
-h1 {
-  margin-left: 2vh;
+h1, section {
+  margin: 2vh 2vh;
+}
+
+.Screen {
+  height: 100vh;
 }
 
 .Opportunity {

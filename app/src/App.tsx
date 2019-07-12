@@ -63,11 +63,23 @@ function renderIntensity(inverseSeconds: number): string {
 const App: React.FC<any> = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        Hey, Patrick!
-      </header>
-      <h1>This week's opportunities</h1>
-      {opportunities.map(renderOpportunity)}
+      <div className="Screen">
+        <header className="App-header">
+          Welcome!
+        </header>
+        <h1>Getting started</h1>
+        <section>
+          <p>To roll with this tribe, we need the data from your fitness tracker (e.g. Fitbit, Garmin watch). Click "add device" below to get started.</p>
+          <a href="#opportunities">Add device</a>
+        </section>
+      </div>
+      <div className="Screen">
+        <header className="App-header" id="opportunities">
+          Hey, Patrick!
+        </header>
+        <h1>This week's opportunities</h1>
+        {opportunities.map(renderOpportunity)}
+      </div>
     </div>
   );
 
@@ -101,8 +113,8 @@ const App: React.FC<any> = () => {
             href={`data:text/calendar;charset=utf-8,${encodeURIComponent(calendar.toString())}`}
             download={`training-${startTime}.ics`}
           >Add to calendar</a>
-        </div>
-      </div>
+    </div>
+  </div>
     );
   }
 }
